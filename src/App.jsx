@@ -26,10 +26,6 @@ export const App = () => {
     setSelectedGood('');
   };
 
-  const handleRemove = () => {
-    setSelectedGood('');
-  };
-
   return (
     <main className="section container">
       <h1 className="title is-flex is-align-items-center">
@@ -60,7 +56,7 @@ export const App = () => {
                     data-cy="RemoveButton"
                     type="button"
                     className="button is-info"
-                    onClick={handleRemove}
+                    onClick={handleClear}
                   >
                     -
                   </button>
